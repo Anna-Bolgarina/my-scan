@@ -1,0 +1,25 @@
+@import "../../../../style/vars.scss";
+
+.user {
+  display: flex;
+  gap: 5px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: $text1;
+  }
+  &__name {
+    font-size: $textxs;
+    line-height: $textxslh;
+    opacity: 70%;
+  }
+  &__buttonExit {
+    @include button-exit;
+  }
+}
+@media screen and (max-width: 800px) {
+  .user {
+    display: none !important;
+  }
+}

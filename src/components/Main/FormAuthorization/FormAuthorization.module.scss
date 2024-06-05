@@ -1,0 +1,60 @@
+@import "../../../style/vars.scss";
+
+.container {
+  @include container;
+  min-height: calc(100vh - 93px - 137px);
+}
+.formAuthorization {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+  }
+  &__lockImg {
+    height: 342px;
+    margin-left: 12px;
+  }
+  &__right {
+    width: 480px;
+    padding: 24px;
+  }
+  &__lock {
+    position: absolute;
+    margin-left: -260px;
+    margin-top: -68px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .formAuthorization {
+    &__lock {
+      margin-left: -220px;
+    }
+  }
+}
+@media screen and (max-width: 1150px) {
+  .formAuthorization {
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    &__lock {
+      margin-left: -100px;
+      margin-top: 5px;
+    }
+    &__lockImg{
+      margin-bottom: 60px;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  h3 {
+    font-size: $textlm;
+    line-height: $textlmlh;
+  }
+}
+

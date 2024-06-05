@@ -1,0 +1,57 @@
+@import "./reset.scss";
+@import "./vars.scss";
+
+@font-face {
+  font-family: "Ferry";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Ferry"), url("../../public/font/ferry_black.otf") format("otf");
+}
+
+body {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: $ws;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  font-family: "Ferry";
+  font-style: normal;
+  font-weight: $wl;
+  font-size: $h1;
+  line-height: $h1lh;
+}
+h2 {
+  font-family: "Ferry";
+  font-style: normal;
+  font-weight: $wl;
+  font-size: $h2;
+  line-height: $h2lh;
+}
+h3 {
+  font-family: "Ferry";
+  font-style: normal;
+  font-weight: $wl;
+  font-size: $h3;
+  line-height: $h3lh;
+}
+h4 {
+  font-family: "Ferry";
+  font-style: normal;
+  font-weight: $wl;
+  font-size: $h4;
+  line-height: $h3lh;
+}
+h5 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: $wm;
+  font-size: $h5;
+  line-height: $h5lh;
+}

@@ -1,0 +1,138 @@
+//шрифты
+$wl: 900;
+$wm: 500;
+$ws: 400;
+$h1: 60px;
+$h1m: 28px;
+$h2: 45px;
+$h3: 40px;
+$h4: 30px;
+$h5: 30px;
+$h4s: 26px;
+
+$h1lh: 72px;
+$h1mlh: 33.6px;
+$h2lh: 54px;
+$h3lh: 48px;
+$h4lh: 36px;
+$h5lh: 36.31px;
+$h4slh: 31.47px;
+
+$mediahl: 28px;
+$mediahm: 20px;
+$madiahs: 16px;
+
+$textl: 20px;
+$textlm: 22px;
+$textm: 18px;
+$texts: 16px;
+$textxs: 14px;
+$textxsx: 12px;
+$textxxs: 10px;
+
+$textlmlh: 26.63px;
+$textllh: 24.2px;
+$textmlh: 21.78px;
+$textslh: 19.36px;
+$textxslh: 16.94px;
+$textxsxlh: 14.52px;
+$textxxslh: 12.1px;
+
+//цвета
+$bcmain: #ffffff;
+$bcfooter: #029491;
+$bcinfo: #efeded;
+$button1: #7ce3e1;
+$button2: #5970ff;
+$button3: #ffb64f;
+$button4: #3ba5e0;
+$buttonnoactive: #d2d2d2;
+$text1: #000000;
+$text2: #ffffff;
+$text3: #949494;
+$text4: #8ac540;
+$warning: #ff5959;
+$border: #c7c7c7;
+
+//контейнер
+@mixin container {
+  max-width: 1320px;
+  
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+//кнопки
+@mixin button-login {
+  width: 65px;
+  padding: 4.5px;
+  background-color: #7ce3e1;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.94px;
+  &:hover {
+    background-color: #029491;
+    color: #ffffff;
+  }
+}
+
+@mixin button-exit {
+  width: 45px;
+  padding: 5px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12.1px;
+  opacity: 40%;
+  &:hover {
+    opacity: 80%;
+  }
+}
+
+@mixin button-request {
+  width: 335px;
+  padding: 16px;
+  background-color: #5970ff;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26.63px;
+}
+
+@mixin button-link {
+  width: 223px;
+  padding: 13px;
+  background-color: #7ce3e1;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+}
+
+@mixin button-mobil {
+  width: 295px;
+  padding: 13px;
+  background-color: #7ce3e1;
+  border-radius: 5px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.2px;
+}
+
+//бейдж
+@mixin bedge {
+  width: 157px;
+  height: 22px;
+  padding: 4px;
+  background-color: $button3;
+  border-radius: 5px;
+  color: $text1;
+  font-size: $textxsx;
+  line-height: $textxsxlh;
+  text-align: center;
+}

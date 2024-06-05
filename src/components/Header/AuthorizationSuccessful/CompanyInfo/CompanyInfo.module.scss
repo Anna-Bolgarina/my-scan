@@ -1,0 +1,51 @@
+@import "../../../../style/vars.scss";
+
+.company {
+  width: 195px;
+  height: 63px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: $bcinfo;
+  border-radius: 5px;
+  &__quantity {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    &__text {
+      font-weight: $ws;
+      font-size: $textxxs;
+      line-height: $textxxslh;
+      color: $text3;
+    }
+  }
+  &__count {
+    &_black {
+      font-weight: $wl;
+      font-size: $textxs;
+      line-height: $textxslh;
+      color: $text1;
+    }
+    &_green {
+      font-weight: $wl;
+      font-size: $textxs;
+      line-height: $textxslh;
+      color: $text4;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .company {
+    width: 132px;
+    padding: 0 5px;
+    gap:0;
+    &__quantity{
+      flex-direction: column;
+      align-items:start;
+      gap:0;
+    }
+  }
+}

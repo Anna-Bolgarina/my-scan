@@ -1,0 +1,31 @@
+@import "../../../style/vars.scss";
+
+.rates {
+  margin: 80px 0;
+  &__title {
+    text-align: left;
+  }
+  &__cards {
+    margin-top: 40px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .rates {
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .rates {
+    &__title {
+      font-size: $h1m;
+      line-height: $h1mlh;
+    }
+  }
+}

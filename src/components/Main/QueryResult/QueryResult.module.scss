@@ -1,0 +1,75 @@
+@import "../../../style/vars.scss";
+
+.container {
+  @include container;
+  min-height: calc(100vh - 93px - 137px);
+}
+.queryResult {
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+  }
+  &__text {
+    font-size: $textl;
+    line-height: $textllh;
+  }
+  &__img {
+    max-width: 552px;
+    height: auto;
+  }
+}
+.resultTab {
+  margin-top: -20px;
+  &__title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+  }
+  &__slider {
+    margin: 20px auto 0;
+    width: 92%;
+  }
+}
+.resultList {
+  margin-top: 80px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  h3,
+  h4 {
+    font-size: $h1m;
+    line-height: $h1mlh;
+  }
+  .queryResult {
+    flex-direction: column;
+    &__text {
+      font-size: $textm;
+      line-height: $textmlh;
+    }
+  }
+  .resultTab {
+    margin-top: 20px;
+    &__slider {
+      margin: 10px auto 0;
+      width: 92%;
+    }
+  }
+  .resultList {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resultTab {
+    &__slider {
+      width: 90%;
+    }
+  }
+}

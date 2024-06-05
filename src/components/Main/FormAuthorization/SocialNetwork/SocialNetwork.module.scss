@@ -1,0 +1,17 @@
+@import "../../../../style/vars.scss";
+
+.socialNetwork {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__title {
+    font-size: $texts;
+    line-height: $textslh;
+    color: $text3;
+  }
+  &__content{
+    margin-bottom: 40px;
+    display: flex;
+    gap:10px;
+  }
+}

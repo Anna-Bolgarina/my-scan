@@ -1,0 +1,24 @@
+@import "../../../style/vars.scss";
+
+.authorization {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &__button_login {
+    @include button-login;
+  }
+  &__link {
+    font-size: $textxs;
+    line-height: $textxslh;
+    opacity: 40%;
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .authorization {
+    display: none;
+  }
+}

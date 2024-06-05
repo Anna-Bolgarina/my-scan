@@ -1,0 +1,24 @@
+@import "../../../style/vars.scss";
+.advantages {
+  margin-top: 60px;
+  &__title {
+    text-align: left;
+    &_mobile {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .advantages {
+    &__title {
+      display: none;
+      &_mobile {
+        display: block;
+        text-align: left;
+        font-size: $h1m;
+        line-height: $h1mlh;
+      }
+    }
+  }
+}

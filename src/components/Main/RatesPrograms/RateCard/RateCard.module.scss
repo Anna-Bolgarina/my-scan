@@ -1,0 +1,170 @@
+@import "../../../../style/vars.scss";
+
+.rate {
+  width: 415px;
+  height: 540px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  &.orange {
+    border: 2px solid $button3;
+  }
+  &.aqua {
+    border: 2px solid $button1;
+  }
+  &.black {
+    border: 2px solid $text1;
+  }
+}
+.header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  &.orange {
+    background-color: $button3;
+  }
+  &.aqua {
+    background-color: $button1;
+  }
+  &.black {
+    background-color: $text1;
+  }
+  &__content {
+    height: 132px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.fontBlack {
+  color: $text1;
+}
+.fontWhite {
+  color: $text2;
+}
+.header__img {
+  width: 92px;
+}
+.description {
+  margin-top: 10px;
+}
+.card {
+  position: relative;
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  &__tariff {
+    width: 134px;
+    padding: 5px;
+    position: absolute;
+    top: -2px;
+    left: 272px;
+    font-size: $textxs;
+    line-height: $textxslh;
+    color: $text2;
+    text-align: center;
+    background-color: $button4;
+    border-radius: 10px;
+  }
+}
+.tariff {
+  &__description {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.price {
+  font-weight: $wm;
+  font-size: $h4;
+  line-height: $h4lh;
+  &_promo {
+    margin-left: 20px;
+    opacity: 50%;
+    text-decoration: line-through;
+  }
+}
+.option {
+  margin-top: 10px;
+  font-size: $textm;
+  line-height: $textmlh;
+}
+.compound {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__content {
+    font-weight: $wm;
+    font-size: $textl;
+    line-height: $textllh;
+  }
+  &__list {
+    font-size: $textm;
+    line-height: $textmlh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__img {
+    margin-right: 5px;
+  }
+}
+
+.button {
+  @include button-request;
+  margin: 12px auto;
+  color: $text2;
+}
+
+@media screen and (max-width: 1290px) {
+  .rate {
+    max-width: 400px;
+  }
+  .card {
+    &__tariff {
+      top: -2px;
+      left: 256px;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .rate {
+    max-width: 350px;
+    height: auto;
+  }
+  .card {
+    &__tariff {
+      top: -2px;
+      left: 206px;
+    }
+  }
+  .button {
+    @include button-request;
+    max-width: 300px;
+    padding: 16px;
+    margin: 12px auto;
+    color: $text2;
+    font-size: $textm;
+    line-height: $textmlh;
+  }
+  .option {
+    height: 45px;
+  }
+}
+@media screen and (max-width: 650px) {
+  h5 {
+    font-size: $textl;
+    line-height: $textllh;
+  }
+  .compound {
+    &__list {
+      font-size: $texts;
+      line-height: $textslh;
+    }
+  }
+}

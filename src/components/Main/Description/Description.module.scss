@@ -1,0 +1,61 @@
+@import "../../../style/vars.scss";
+
+.description {
+  margin-top: 24px;
+  min-height: 620px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+
+  &__title {
+    max-width: 743px;
+  }
+  &__text {
+    max-width: 534px;
+    margin-top: 40px;
+    font-size: $textl;
+    line-height: $textllh;
+    text-align: left;
+  }
+  &__button {
+    @include button-request;
+    margin-top: 80px;
+  }
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .description {
+    flex-direction: column;
+    text-align: center;
+    &__title {
+      text-align: left;
+    }
+    &__img {
+      margin: 0 auto;
+      max-width: 629px;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .description {
+    &__title {
+      font-size: $h1m;
+      line-height: $h1mlh;
+    }
+    &__text {
+      font-size: $textm;
+      line-height: $textmlh;
+    }
+    &__img {
+      max-width: 300px;
+    }
+    &__button {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
